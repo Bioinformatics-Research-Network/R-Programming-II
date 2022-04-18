@@ -68,7 +68,7 @@ Rscript -e "if (is.null(devtools::build_vignettes())) quit(save = 'no', status =
 
 If the bot checks are successful, your supervisor will manually inspect the package to ensure that the documentation is clear and easy to follow.
 
-To aid her in this effort, you are expected to provide a vignette which outlines how the package works. See a completed example [here]().
+To aid her in this effort, you are expected to provide a vignette which outlines how the package works. See a completed example [here](https://bioinformatics-research-network.github.io/R-Programming-II/bioutils_quickstart.html).
 
 The easiest way to create one is the run:
 
