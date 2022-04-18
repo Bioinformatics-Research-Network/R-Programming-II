@@ -1,0 +1,10 @@
+^BioUtils\.Rproj$
+^\.Rproj\.user$
+^data-raw$
+^LICENSE\.md$
+^\.github$
+^doc$
+^Meta$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
