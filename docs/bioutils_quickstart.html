@@ -160,7 +160,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="find-snvs" class="section level3">
 <h3>Find SNVs</h3>
-<p>Single nucleotide variants (SNVs) are DNA sequence variations that arise when a single base is altered. The [find_snvs] function provides the capability to identify SNVs between cancer and normal sequences.</p>
+<p>Single nucleotide variants (SNVs) are DNA sequence variations that arise when a single base is altered. The <code>find_snvs</code> function provides the capability to identify SNVs between cancer and normal sequences.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find_snvs</span>(</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">cancer =</span> <span class="st">&quot;ATGCGCTA&quot;</span>,</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">normal =</span> <span class="st">&quot;ATGCTCTT&quot;</span></span>
@@ -171,19 +171,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="transcribe" class="section level3">
 <h3>Transcribe</h3>
-<p>DNA is transcribed into RNA. The <a href="#transcribe">transcribe</a> function finds the RNA sequence that will arise from a given DNA sequence.</p>
+<p>DNA is transcribed into RNA. The <code>transcribe</code> function finds the RNA sequence that will arise from a given DNA sequence.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">transcribe</span>(<span class="at">sequence =</span> <span class="st">&quot;AAAGTCGAGGTGTAGATCAAACCC&quot;</span>)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;UUUCAGCUCCACAUCUAGUUUGGG&quot;</span></span></code></pre></div>
 </div>
 <div id="translate" class="section level3">
 <h3>Translate</h3>
-<p>RNA is then translated into protein. The <a href="#translate">translate</a> function finds the protein sequence that will arise from the supplied RNA sequence. Note that the RNA sequence length must be evenly divisible by 3 because 3-base codons are used in the function.</p>
+<p>RNA is then translated into protein. The <code>translate</code> function finds the protein sequence that will arise from the supplied RNA sequence. Note that the RNA sequence length must be evenly divisible by 3 because 3-base codons are used in the function.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">translate</span>(<span class="at">sequence =</span> <span class="st">&quot;UUUCAGCUCCACAUCUAGUUUGGG&quot;</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] &quot;FQLHI*FG&quot;</span></span></code></pre></div>
 </div>
 <div id="protein-variants" class="section level3">
 <h3>Protein variants</h3>
-<p>The [protein_variant] function takes a cancer and normal DNA sequence, computes the resulting protein sequences, and then returns any differences between them.</p>
+<p>The <code>protein_variant</code> function takes a cancer and normal DNA sequence, computes the resulting protein sequences, and then returns any differences between them.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">protein_variant</span>(</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">cancer =</span> <span class="st">&quot;AAAGTGGAGGTGTAGATCAAACCC&quot;</span>,</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">normal =</span> <span class="st">&quot;AAAGTCGAGGTGTAGATGAAACCC&quot;</span></span>
@@ -194,7 +194,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="find-nonsense-variants" class="section level3">
 <h3>Find Nonsense Variants</h3>
-<p>Nonsense variants arise when an SNV causes a premature STOP codon within a sequence. The [find_nonsense] function scans for nonsense variants within cancer and normal sequences supplied on a per-gene basis. See an example of the input data below:</p>
+<p>Nonsense variants arise when an SNV causes a premature STOP codon within a sequence. The <code>find_nonsense</code> function scans for nonsense variants within cancer and normal sequences supplied on a per-gene basis. See an example of the input data below:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>sequences <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">gene_id =</span> <span class="fu">c</span>(<span class="st">&quot;ENSG00000147889&quot;</span>, <span class="dv">8243</span>, <span class="dv">675</span>),</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">cancer =</span> <span class="fu">c</span>(</span>
@@ -213,7 +213,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 1 ENSG00000147889    AAAGTGGAGGTGTAGATCAAACCC    AAAGTCGAGGTGTAGATGAAACCC</span></span>
 <span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2            8243 CATATCCTGATCGGCCTGATCGGGAGG CATAGCCTGATCGGCCTGAGCGGGAGG</span></span>
 <span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 3             675       AGGGCTTTTACCCAGCATTGA       AGGGCTTTTACCCAGGATTGA</span></span></code></pre></div>
-<p>The result of running [find_nonsense] on these sequences:</p>
+<p>The result of running <code>find_nonsense</code> on these sequences:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find_nonsense</span>(<span class="at">sequences =</span> sequences)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;            gene_id symbol codon_number cancer normal</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 2  ENSG00000147889 CDKN2A            6      *      Y</span></span>
