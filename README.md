@@ -76,8 +76,6 @@ Rscript -e "if (is.null(devtools::build_vignettes())) quit(save = 'no', status =
 
 </details>
 
-<br>
-
 ### Manual inspection
 
 If the bot checks are successful, your supervisor will manually inspect the package to ensure that the documentation is clear and easy to follow.
