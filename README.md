@@ -1,5 +1,19 @@
 # R Programming II
 
+<!---
+Update the badge below as the version changes
+-->
+
+[![](https://img.shields.io/static/v1?label=Classroom&message=Launch&color=blue&logo=GitHub)](https://classroom.github.com/a/I0x9GSYa)
+![](https://img.shields.io/static/v1?label=Version&message=0.0.1a&color=green)
+
+**Purpose**: This skill assessment will test your intermediate R programming skills.
+
+**Pre-requisites**: *Required*: [R Programming I](https://github.com/Bioinformatics-Research-Network/R-Programming-I); *Suggested*: [RMarkdown basics]()
+
+
+## Background
+
 After you completed the tasks your supervisor gave you in R Programming I, you get a call from HR. Apparently, your functions were so useful that your been promoted from a Bioinformtics Assistant to Bioinformatics Programer 🚀. Your first task will be to turn your `utils.R` script into a package, `BioUtils`, for the whole bioinformatics team to use 🎯. The package should contain all the functions you wrote in `utils.R`, but properly formatted as an R package and well-documented. This will enable your colleagues to easily install your package and use the functions contained within!
 
 Users will use your package like so:
