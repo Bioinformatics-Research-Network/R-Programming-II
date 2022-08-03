@@ -45,7 +45,7 @@ Good luck and have fun! 😊
 
 **TLDR; Take the functions from [R Programming I](https://github.com/Bioinformatics-Research-Network/R-Programming-I) and turn them into a package called "BioUtils"**
 
-After you completed the tasks your supervisor gave you in [R Programming I](https://github.com/Bioinformatics-Research-Network/R-Programming-I), you get a call from HR. Apparently, your functions were so useful that your been promoted from a Bioinformtics Assistant to Bioinformatics Associate 🚀. Your first task will be to turn your `utils.R` script into a package, `BioUtils`, for the whole bioinformatics team to use 🎯. The package should contain all the functions you wrote in `utils.R`, but properly formatted as an R package and well-documented. This will enable your colleagues to easily install your package and use the functions contained within!
+After you completed the tasks your supervisor gave you in [R Programming I](https://github.com/Bioinformatics-Research-Network/R-Programming-I), you get a call from HR. Apparently, your functions were so useful that you have been promoted from a Bioinformatics Assistant to Bioinformatics Associate 🚀. Your first task will be to turn your `utils.R` script into a package, `BioUtils`, for the whole bioinformatics team to use 🎯. The package should contain all the functions you wrote in `utils.R`, but properly formatted as an R package and well-documented. This will enable your colleagues to easily install your package and use the functions contained within!
 
 Users will use your package like so:
 
